@@ -52,7 +52,7 @@ def create_prompt(user_intro):
 
 # Function to generate MSDS using Gemini
 def generate_msds(prompt):
-    model = genai.GenerativeModel('gemini-pro')
+    model = genai.GenerativeModel('models/gemini-1.5-flash')
     response = model.generate_content(prompt)
     return response.text
 
